@@ -6,9 +6,10 @@ import re
 main_page_head = '''
 <head>
     <meta charset="utf-8">
-    <title>Fresh Tomatoes!</title>
+    <title>Jessica's Movie Project</title>
 
     <!-- Bootstrap 3 -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -16,6 +17,7 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            font-family: 'Open Sans', sans-serif;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -35,6 +37,7 @@ main_page_head = '''
         .movie-tile {
             margin-bottom: 20px;
             padding-top: 20px;
+            font-family: 'Open Sans', sans-serif;
         }
         .movie-tile:hover {
             background-color: #EEE;
@@ -86,6 +89,8 @@ main_page_head = '''
 main_page_content = '''
 <!DOCTYPE html>
 <html lang="en">
+<h1 align=center> The Best Movies in the World </h1>
+<h2 align=center>This is a website made up of my favorite movies. Enjoy!</h2>
   <body>
     <!-- Trailer Video Modal -->
     <div class="modal" id="trailer">
@@ -105,7 +110,7 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#">Movie Trailers</a>
           </div>
         </div>
       </div>
