@@ -1,40 +1,40 @@
 import fresh_tomatoes
 import media
 
-toy_story = media.Movie("Toy Story",
-                        "A story of a boy and his toys that come to life",
-                        "https://vignette3.wikia.nocookie.net/disney/images/1/13/Toy_Story.jpg/revision/latest?cb=20151003163558",
-                        "https://www.youtube.com/watch?v=KYz2wyBy3kc")
+#Movie content for the page including poster and trailer.
+harry_potter = media.Movie("Harry Potter",
+                        "Harry Potter is a wizzrd and is set to defeat the evil Lord Voldemort.",
+                        "https://vignette2.wikia.nocookie.net/harrypotter/images/2/23/Tt0373889_largeCover.jpg/revision/latest?cb=20090604141238",
+                        "https://www.youtube.com/watch?v=JYLdTuL9Wjw")
     
-#print (toy_story.storyline)
 
-avatar = media.Movie("Avatar",
-                     "A marine on an alien planet",
-                     "http://vignette2.wikia.nocookie.net/ppc/images/d/d6/Avatar-movie-poster.jpg/revision/latest?cb=20110913151129",
-                     "https://www.youtube.com/watch?v=d1_JBMrrYw8")                     
+breakfast = media.Movie("Breakfast At Tiffany's",
+                     "A beautiful girl living in New York City",
+                     "https://upload.wikimedia.org/wikipedia/en/a/a9/Breakfast_at_Tiffanys.jpg",
+                     "https://www.youtube.com/watch?v=urQVzgEO_w8")                     
 
-#print (avatar.storyline)
-#avatar.show_trailer()
 
-school_of_rock = media.Movie("School of Rock",
-                             "Storyline",
-                             "https://upload.wikimedia.org/wikipedia/en/1/11/School_of_Rock_Poster.jpg",
-                             "https://www.youtube.com/watch?v=XCwy6lW5Ixc")
+la_la_land = media.Movie("La La Land",
+                        "Struggling actress and out of date jazz player fall in love and figure out life.",
+                        "http://www.impawards.com/2016/posters/la_la_land_ver3.jpg",
+                        "https://www.youtube.com/watch?v=0pdqf4P9MB8")
 
-ratatouille = media.Movie("Ratatouille",
+selena = media.Movie("Selena",
                           "Storyline",
-                          "https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg",
-                          "https://www.youtube.com/watch?v=c3sBBRxDAqk")
+                          "https://images-na.ssl-images-amazon.com/images/I/51CVMPPGSML.jpg",
+                          "https://www.youtube.com/watch?v=EVMSuZXEz4s")
 
-midnight_in_paris = media.Movie("Midnight in Paris", "Storyline",
-                                "https://upload.wikimedia.org/wikipedia/en/9/9f/Midnight_in_Paris_Poster.jpg",
-                                "https://www.youtube.com/watch?v=FAfR8omt-CY")
+super_bad = media.Movie("Superbad", "Storyline",
+                                "http://www.impawards.com/2007/posters/superbad.jpg",
+                                "https://www.youtube.com/watch?v=1EnGKC9Lk_Y")
 
-hunger_games = media.Movie("Hunger Games", "Storyline",
-                           "https://upload.wikimedia.org/wikipedia/en/4/4b/Hunger_Games_Film_Poster.jpg",
-                           "https://www.youtube.com/watch?v=mfmrPu43DF8")
+star_wars = media.Movie("Star Wars: Episode V", "Storyline",
+                           "https://s-media-cache-ak0.pinimg.com/originals/81/76/18/8176180953311ef1d6efa99af8254dcd.jpg",
+                           "https://www.youtube.com/watch?v=JNwNXF9Y6kY")
+
 
                              
-movies = [toy_story, avatar, school_of_rock, ratatouille, midnight_in_paris, hunger_games]
+movies = [harry_potter, breakfast, la_la_land, selena, super_bad, star_wars]
 
 fresh_tomatoes.open_movies_page(movies)
+#print (media.Movie.__dict__)
